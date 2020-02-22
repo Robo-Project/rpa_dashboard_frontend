@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import jenkinsService from './jenkinsService'
-import Trigger from './Trigger';
+import Trigger from './Trigger'
 
-function App() {
+function App () {
   const [jobs, setJobs] = useState([])
 
   useEffect(() => {
@@ -12,16 +12,16 @@ function App() {
 
   return (
     <div>
-      {jobs.map(job => {
+      {jobs.map((job, i) => {
         return (
-          <li>
+          <li key={i}>
             {job}
             <Trigger label='launch' job={job} />
           </li>
         )
       })}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

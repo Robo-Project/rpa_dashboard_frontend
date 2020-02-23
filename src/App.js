@@ -15,8 +15,8 @@ function App () {
       {jobs.map((job, i) => {
         return (
           <li key={i}>
-            {job}
-            <Trigger label='launch' job={job} />
+            {job.name}
+            <Trigger label='launch' job={job.name} />
           </li>
         )
       })}

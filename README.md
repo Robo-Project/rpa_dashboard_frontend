@@ -15,3 +15,7 @@ build and run with
 
     npm start
 
+**NOTICE**
+
+If you are running jenkins locally make sure that CORS-support plugin is installed and configured in jenkins.
+

@@ -8,7 +8,7 @@ const getAllJobs = async () => {
 }
 
 const build = async (job, parameters, branch = 'master') => {
-  const res = await axios.post(`build/${URL}/${job}/${branch}`, parameters)
+  const res = await axios.post(`${URL}/build/${job}/${branch}`, parameters)
   return res.data
 }
 

@@ -1,19 +1,15 @@
-import jenkinsapi from 'jenkins'
+import axios from 'axios'
 
 const URL = process.env.REACT_APP_JENKINS_URL
-const jenkins = jenkinsapi({
-  baseUrl: URL,
-  promisify: true
-})
 
 const getAllJobs = async () => {
-  const jobs = await jenkins.job.list()
-  return jobs
+  const res = await axios.get(`${URL}/jobs`)
+  return res.data
 }
 
-const build = async (job, parameters) => {
-  const res = await jenkins.job.build(job, parameters)
-  return res
+const build = async (job, parameters, branch = 'master') => {
+  const res = await axios.post(`build/${URL}/${job}/${branch}`, parameters)
+  return res.data
 }
 
 export default { getAllJobs, build }

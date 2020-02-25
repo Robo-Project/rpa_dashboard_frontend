@@ -8,7 +8,7 @@ function App () {
   useEffect(() => {
     jenkinsService.getAllJobs()
       .then(jobs => setJobs(jobs))
-  })
+  }, [])
 
   return (
     <div>

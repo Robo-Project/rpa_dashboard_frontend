@@ -6,6 +6,8 @@ The frontend used to launch RPA jobs in RPA dashboard
 
 Create a file called `.env.development` and define `REACT_APP_JENKINS_URL` in it
 
+The `JENKINS_URL` should be the address where jenkins-service is running
+
 **Example**
 
     REACT_APP_JENKINS_URL=http://localhost:8080
@@ -15,7 +17,4 @@ build and run with
 
     npm start
 
-**NOTICE**
-
-If you are running jenkins locally make sure that CORS-support plugin is installed and configured in jenkins.
 

@@ -13,8 +13,20 @@ The `JENKINS_URL` should be the address where jenkins-service is running
     REACT_APP_JENKINS_URL=http://localhost:4000
 
 
+## Manually
+
+install dependencies with
+
+    `npm install`
+
 build and run with
 
-    npm start
+    `npm start`
+
+## Using Docker
+
+run with `docker-compose up`
+
+connect to `localhost:5000`
 
 

@@ -31,7 +31,7 @@ function App () {
           position="relative"
           allowFullScreen />
 
-        <Iframe url="http://localhost:3000/d-solo/qjch3YsZk/rpa-board?orgId=1&refresh=5s&from=1582739427836&to=1582743027836&panelId=14"
+        <Iframe url="http://localhost:3000/d-solo/qjch3YsZk/rpa-board?orgId=1&refresh=5s&panelId=14"
           width="900px"
           height="350px"
           display="initial"

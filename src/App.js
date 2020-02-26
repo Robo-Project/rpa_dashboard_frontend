@@ -13,16 +13,18 @@ function App () {
 
   return (
     <div>
-      <div>
+      <table>
+        <tr><td>Job name:</td><td></td></tr>
         {jobs.map((job, i) => {
           return (
-            <li key={i}>
-              {job.name}
+            <tr key={i}><td>
+              {job.name} </td><td>
               <Trigger label='launch' job={job.name} />
-            </li>
+            </td>
+            </tr>
           )
         })}
-      </div>
+      </table>
       <div>
         <Iframe url="http://localhost:3000/d-solo/qjch3YsZk/rpa-board?orgId=1&refresh=5s&from=1582719729380&to=1582723329380&panelId=2"
           width="400px"

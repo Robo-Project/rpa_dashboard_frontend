@@ -1,9 +1,10 @@
 import React from 'react'
 import jenkinsService from './jenkinsService'
+import Button from 'react-bootstrap/Button';
 
 function Trigger ({ label, job, parameters }) {
   return (
-    <button type='button' onClick={() => jenkinsService.build(job, parameters)}>{label}</button>
+    <Button variant="outline-dark" type='button' onClick={() => jenkinsService.build(job, parameters)}>{label}</Button>
   )
 }
 

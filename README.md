@@ -2,6 +2,8 @@
 
 The frontend used to launch RPA jobs in RPA dashboard
 
+Remember to also start jenkins-service and rpa_dashboard
+
 ## Setup
 
 Create a file called `.env.development` and define `REACT_APP_JENKINS_URL` in it

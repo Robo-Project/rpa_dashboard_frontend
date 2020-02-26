@@ -10,7 +10,7 @@ The `JENKINS_URL` should be the address where jenkins-service is running
 
 **Example**
 
-    REACT_APP_JENKINS_URL=http://localhost:8080
+    REACT_APP_JENKINS_URL=http://localhost:4000
 
 
 build and run with

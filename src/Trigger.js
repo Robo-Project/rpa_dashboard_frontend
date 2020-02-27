@@ -1,6 +1,6 @@
 import React from 'react'
 import jenkinsService from './jenkinsService'
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'
 
 function Trigger ({ label, job, parameters }) {
   return (
